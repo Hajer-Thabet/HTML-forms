@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+        
+       
+        <div class="group">
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name" />
+        
+        </div>
+        <div class="group">
+        <label for="Email">Email:</label>
+        <input
+            id="Email"
+            type="text"
+            name="zipcode"
+            autofocus="on"
+            maxlength="20"
+            required
+
+        />
+        </div>
+        
+        <div class="group">
+          <label for="form-message">Your message:</label>
+          <textarea
+            id="form-message"
+            name="message"
+            required
+            maxlength="600"
+            rows="7"
+            cols="171"
+           
+           
+          ></textarea>
+        </div>
+
+        <div>
+          <h2>Favorite Color:</h2>
+          <div>
+            <input id="red" name="color" type="radio" value="red" />
+            <label for="red">Red</label>
+          </div>
+          <div>
+            <input id="blue" name="color" type="radio" value="blue" />
+            <label for="blue">Blue</label>
+          </div>
+          <div>
+            <input id="white" name="color" type="radio" value="white" />
+            <label for="white">White</label>
+          </div>
+        </div>
+   
+        
+        <button type="submit">Submit</button>
+      
+      
+      </form>
+    </main>
+  </body>
+</html>
